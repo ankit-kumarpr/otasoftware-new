@@ -705,7 +705,7 @@ const AddHotel = () => {
                 <Zoom in timeout={600 + index * 100}>
                   <ModernHotelCard>
                     <ModernCardMedia 
-                      image={`http://localhost:6500/uploads/hotels/${hotel.image}`}
+                      image={`https://otasoftware-new.onrender.com/uploads/hotels/${hotel.image}`}
                       title={hotel.name}
                       sx={{
                         backgroundImage: `url(${BASE_URL}/uploads/hotels/${hotel.image})`,

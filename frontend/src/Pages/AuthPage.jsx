@@ -101,9 +101,7 @@ const AuthPage = () => {
             <div className={`form-group ${isFocused.email ? "focused" : ""}`}>
               <label htmlFor="email">Email</label>
               <div className="input-group">
-                <span className="input-icon">
-                  <FaEnvelope />
-                </span>
+               
                 <input
                   type="email"
                   id="email"
@@ -121,9 +119,7 @@ const AuthPage = () => {
             >
               <label htmlFor="password">Password</label>
               <div className="input-group">
-                <span className="input-icon">
-                  <FaLock />
-                </span>
+               
                 <input
                   type="password"
                   id="password"

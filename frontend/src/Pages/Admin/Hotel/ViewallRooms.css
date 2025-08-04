@@ -1,0 +1,509 @@
+/* ViewallRooms.css */
+.inventory-management-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.main-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hotel-selector {
+  margin-bottom: 30px;
+}
+
+.hotel-selector h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.hotel-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.hotel-btn {
+  padding: 8px 15px;
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.hotel-btn.active {
+  background: #4a6bff;
+  color: white;
+  border-color: #4a6bff;
+}
+
+.inventory-section {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.inventory-header {
+  display: flex;
+  background: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+.updates-column {
+  width: 200px;
+  padding: 15px;
+  border-right: 1px solid #ddd;
+}
+
+.updates-column h4 {
+  margin: 0 0 15px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.dynamic-pricing {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.rateplans-section {
+  margin-top: 15px;
+}
+
+.rateplans-section h4 {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.rateplan {
+  padding: 8px 0;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rateplan:hover {
+  color: #4a6bff;
+}
+
+.rateplan.selected {
+  color: #4a6bff;
+  font-weight: bold;
+}
+
+.room-type-price {
+  font-size: 12px;
+  background: #f0f0f0;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.dates-header {
+  display: flex;
+  flex-grow: 1;
+  overflow-x: auto;
+}
+
+.date-column {
+  min-width: 120px;
+  padding: 15px;
+  text-align: center;
+  border-right: 1px solid #eee;
+}
+
+.date-column:last-child {
+  border-right: none;
+}
+
+.date-header {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.availability-status {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.filters-section {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+.room-search-container {
+  flex: 1;
+}
+
+.status-filter-container {
+  width: 200px;
+}
+
+.room-search-input,
+.status-filter {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.room-details-section {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.room-details-header {
+  display: flex;
+  background: #f5f5f5;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+
+.room-number-header {
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+  border-right: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.room-date-header {
+  min-width: 120px;
+  padding: 10px;
+  text-align: center;
+  border-right: 1px solid #ddd;
+}
+
+.room-details-body {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.room-row {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  padding: 8px 0;
+}
+
+.room-number {
+  width: 100px;
+  padding: 8px;
+  text-align: center;
+  border-right: 1px solid #ddd;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.room-checkbox {
+  margin-left: 8px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.room-status-cell {
+  min-width: 120px;
+  padding: 8px;
+  text-align: center;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.room-status-badge {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.room-status-badge.available {
+  background-color: #e6f7e6;
+  color: #28a745;
+  border: 1px solid #28a745;
+}
+
+.room-status-badge.booked {
+  background-color: #ffebeb;
+  color: #dc3545;
+  border: 1px solid #dc3545;
+}
+
+.room-status-badge.maintenance {
+  background-color: #fff8e6;
+  color: #ffc107;
+  border: 1px solid #ffc107;
+}
+
+.room-price {
+  font-size: 12px;
+  color: #555;
+}
+
+.book-selected-btn {
+  margin-left: 15px;
+  padding: 4px 8px;
+  background: #4a6bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.book-selected-btn:hover {
+  background: #3a5bef;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  gap: 5px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination button.active {
+  background: #4a6bff;
+  color: white;
+  border-color: #4a6bff;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.ota-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background: #f8f9fa;
+  border-top: 1px solid #ddd;
+}
+
+.ota-name {
+  font-weight: bold;
+}
+
+.bulk-update {
+  display: flex;
+  gap: 15px;
+}
+
+.date-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.date-navigation button {
+  padding: 8px 15px;
+  background: #4a6bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.date-navigation button:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+}
+
+.date-range {
+  font-weight: 500;
+}
+
+/* Booking Modal */
+.booking-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.booking-modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.booking-modal h3 {
+  margin-top: 0;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-group input {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.selected-rooms {
+  margin-top: 15px;
+  padding: 10px;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.selected-rooms h4 {
+  margin-top: 0;
+}
+
+.room-numbers {
+  font-family: monospace;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.cancel-btn {
+  padding: 8px 15px;
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.confirm-btn {
+  padding: 8px 15px;
+  background: #4a6bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.confirm-btn:hover {
+  background: #3a5bef;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .inventory-header {
+    flex-direction: column;
+  }
+  
+  .updates-column {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .dates-header, .room-details-header {
+    overflow-x: auto;
+  }
+  
+  .date-column, .room-date-header {
+    min-width: 100px;
+  }
+
+  .filters-section {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .status-filter-container {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+.room-price .price-input {
+  width: 60px;
+  padding: 4px;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px;
+  -moz-appearance: textfield; /* Firefox mein number input ke arrows hatayein */
+}
+
+.room-price .price-input::-webkit-outer-spin-button,
+.room-price .price-input::-webkit-inner-spin-button {
+  -webkit-appearance: none; /* Chrome/Safari mein number input ke arrows hatayein */
+  margin: 0;
+}
+
+/* Price par hover karne ke liye cursor */
+.room-price span {
+    cursor: pointer;
+    padding: 4px 6px;
+    display: inline-block;
+    min-width: 50px; /* Thodi width dein taaki click karna aasan ho */
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+.room-price span:hover {
+    background-color: #e9ecef;
+}

@@ -1,0 +1,36 @@
+.booking-history-container {
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .booking-history-container {
+        padding: 10px;
+    }
+    
+    table {
+        font-size: 0.85rem;
+    }
+    
+    table th, table td {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-header {
+        font-size: 1.25rem;
+    }
+    
+    table {
+        font-size: 0.75rem;
+    }
+    
+    .badge {
+        font-size: 0.65rem;
+    }
+}

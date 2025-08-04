@@ -1,0 +1,285 @@
+/* Main Styles */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 20px;
+}
+
+.auth-container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.auth-left {
+  flex: 1;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.auth-right {
+  flex: 1;
+  padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-logo {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.auth-logo h1 {
+  font-size: 2.5rem;
+  margin: 15px 0 5px;
+  font-weight: 700;
+}
+
+.auth-logo p {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.hotel-icon {
+  font-size: 3rem;
+  color: #fff;
+}
+
+/* Form Styles */
+.auth-form {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.auth-form h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 700;
+}
+
+.auth-form p {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 0.95rem;
+}
+
+.form-group {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555;
+  transition: all 0.3s;
+}
+
+.form-group.focused label {
+  color: #667eea;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  transition: all 0.3s;
+}
+
+.form-group.focused .input-icon {
+  color: #667eea;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px 12px 45px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+  outline: none;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  font-size: 0.9rem;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+}
+
+.form-check input {
+  margin-right: 8px;
+}
+
+.forgot-password {
+  color: #667eea;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-login:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-login:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Animation Styles */
+.auth-animation {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 40px;
+}
+
+.hotel-building {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to bottom, #ffd86f, #fc6262);
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.windows {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  padding: 15px;
+}
+
+.window {
+  background: #fffacd;
+  height: 30px;
+  border-radius: 3px;
+  animation: window-light 5s infinite alternate;
+}
+
+@keyframes window-light {
+  0%, 40% {
+    background: #fffacd;
+    box-shadow: 0 0 5px #fffacd;
+  }
+  60%, 100% {
+    background: #ffeb3b;
+    box-shadow: 0 0 15px #ffeb3b;
+  }
+}
+
+.window:nth-child(2n) {
+  animation-delay: 1s;
+}
+
+.window:nth-child(3n) {
+  animation-delay: 2s;
+}
+
+/* Footer Styles */
+.auth-footer {
+  margin-top: auto;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #888;
+  padding-top: 30px;
+}
+
+.auth-footer p {
+  margin: 5px 0;
+}
+
+.auth-footer a {
+  color: #667eea;
+  text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .auth-container {
+    flex-direction: column;
+  }
+  
+  .auth-left, .auth-right {
+    padding: 40px 30px;
+  }
+  
+  .auth-right {
+    order: -1;
+  }
+  
+  .auth-animation {
+    margin: 30px auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .auth-form {
+    padding: 0 10px;
+  }
+  
+  .form-options {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .forgot-password {
+    margin-top: 10px;
+  }
+}
